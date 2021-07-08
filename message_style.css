@@ -1,0 +1,160 @@
+
+
+.wrapper {
+    position:relative;
+    width: 720px;
+    background-color:papayawhip;
+    border-radius: 5px;
+    left:50%;
+    top:15%;
+    transform:translate(-50%,0%);
+}
+
+.wrapper header {
+    font-size:22px;
+    font-weight:600;
+    padding: 20px 30px;
+    border-bottom: 2px solid black;
+}
+
+.wrapper form {
+    margin: 25px 15px; 
+}
+
+form .dbl-field {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom:25px;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    grid-gap:25px;
+    padding-bottom:25px;
+}
+
+.dbl-field .field {
+    height:50px;
+    width:calc(100%/ 2 - 13px);
+}
+
+.message {
+    width: 100%;
+    position: relative;
+}
+
+form .field input, form .message textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    position:relative;
+}
+
+textarea {
+    position: relative;
+    height: 80px;
+    min-height: 120px;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px 20px 0 48px;
+}
+
+.field {
+    position: relative;
+    
+}
+
+.user-icon {
+    position: absolute;
+    font-size: 17px;
+    pointer-events: none;
+    display:block;
+    left:5px;
+    top:50%;
+    transform:translateY(-50%);
+    min-height:25px;
+    min-width:25px;
+    background-color:red;
+}
+
+
+.message-icon {
+    position: absolute;
+    font-size: 20px;
+    pointer-events: none;
+    display: block;
+    left: 5px;
+    top: 2%;
+    min-height: 25px;
+    min-width: 25px;
+    background-color: red;
+}
+
+.btn-area {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin:25px 0px;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+
+.btn-area button {
+    font-size:20px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius: 5px;
+    background-color: #0D6EFD;
+    padding:13px 25px;
+}
+
+.btn-area span {
+    color: #0D6EFD;
+    margin-left: 30px;
+    font-size: 18px;
+    display:none;
+}
+
+@media(max-width:600px) {
+    .wrapper {
+        width:90%;
+    }
+    
+    .wrapper header {
+        text-align: center;
+    }
+
+    form .dbl-field {
+        flex-direction:column;
+    }
+
+    .dbl-field .field {
+        width: 100%;
+    }
+
+    .message textarea {
+        resize:none;
+    
+    }
+
+
+    .btn-area {
+        width:100%;
+    }
+
+    .btn-area button {
+        width: 100%;
+    }
+
+    .btn-area span {
+        text-align: center;
+        width: 100%;
+        margin:20px 0px;
+    }
+
+}
